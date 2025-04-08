@@ -4,7 +4,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://miniature-palm-tree-v6wwq6gj4pj9hxw65-8000.app.github.dev/api/users')
+    fetch('https://miniature-palm-tree-v6wwq6gj4pj9hxw65-8000.app.github.dev/api/users/')
       .then(response => response.json())
       .then(data => setUsers(data));
   }, []);

@@ -4,7 +4,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://miniature-palm-tree-v6wwq6gj4pj9hxw65-8000.app.github.dev/api/leaderboard')
+    fetch('https://miniature-palm-tree-v6wwq6gj4pj9hxw65-8000.app.github.dev/api/leaderboard/')
       .then(response => response.json())
       .then(data => setLeaderboard(data));
   }, []);
