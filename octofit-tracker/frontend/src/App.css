@@ -49,11 +49,11 @@ body {
   background-color: #007bff; /* Bootstrap primary blue */
 }
 .navbar .navbar-brand {
-  color: #ffffff;
+  color: #1b0202;
   font-weight: bold;
 }
 .navbar .nav-link {
-  color: #ffffff;
+  color: #771313;
 }
 .navbar .nav-link:hover {
   color: #d4d4d4; /* Light gray on hover */
@@ -87,13 +87,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0056b3; /* Darker blue */
 }
 
-/* Style links */
+/* Update link font color to be darker */
 a {
-  color: #007bff;
+  color: #0056b3; /* Darker blue */
   text-decoration: none;
 }
 a:hover {
-  color: #0056b3;
+  color: #003f7f; /* Even darker blue on hover */
   text-decoration: underline;
 }
 
