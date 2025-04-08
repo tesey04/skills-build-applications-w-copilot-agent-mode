@@ -11,13 +11,14 @@ db = client[settings.DATABASES['default']['NAME']]
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'http://127.0.0.1:8000/'
+    base_url = request.build_absolute_uri('/')
+    codespace_url = "https://miniature-palm-tree-v6wwq6gj4pj9hxw65-8000.app.github.dev"
     return Response({
-        'users': base_url + 'api/users/',
-        'teams': base_url + 'api/teams/',
-        'activities': base_url + 'api/activities/',
-        'leaderboard': base_url + 'api/leaderboard/',
-        'workouts': base_url + 'api/workouts/'
+        'users': codespace_url + '/api/users/',
+        'teams': codespace_url + '/api/teams/',
+        'activities': codespace_url + '/api/activities/',
+        'leaderboard': codespace_url + '/api/leaderboard/',
+        'workouts': codespace_url + '/api/workouts/'
     })
 
 class UserViewSet(viewsets.ViewSet):
